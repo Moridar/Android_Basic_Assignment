@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -74,6 +75,9 @@ public class MainActivity extends ActionBarActivity {
             weekForecast.add("Mon - Foggy - 99 / 50");
 
             mForecastAdaptar = new ArrayAdapter<String>(getActivity(), R.layout.list_item_forecast, R.id.list_item_forecast_textview, weekForecast);
+
+            ListView listView = (ListView)rootView.findViewById(R.id.listView_foreCast);
+            listView.setAdapter(mForecastAdaptar);
 
             return rootView;
         }
