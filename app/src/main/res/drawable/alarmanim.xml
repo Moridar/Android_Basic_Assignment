@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:id="@+id/alarmanim" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/RED" android:duration="50" />
+    <item android:drawable="@color/GREEN" android:duration="50" />
+</animation-list>
